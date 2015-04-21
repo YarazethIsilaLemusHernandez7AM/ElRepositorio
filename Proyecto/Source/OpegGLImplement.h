@@ -48,6 +48,7 @@ public:
 	void Draw(GLuint* vertexBufferObject, GLuint* indexBufferObject, GLuint* textureBufferObject, GLuint textureObject, GLfloat translate_x, GLfloat translate_y, GLfloat translate_z, GLfloat rotate_x, GLfloat rotate_y, GLfloat rotate_z, GLfloat scale_x, GLfloat scale_y, GLfloat scale_z, GLuint size);
 	void DrawStart();
 	void DrawEnd();
+	
 	GLfloat ConvertCOORDf(GLfloat coord);
 	GLfloat ConvertCOORDInvf(GLfloat coord);
 	GLuint LoadTexture(SDL_Surface * surface, GLuint x, GLuint y, GLuint w, GLuint h);

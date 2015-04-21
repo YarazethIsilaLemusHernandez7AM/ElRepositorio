@@ -26,6 +26,11 @@ public:
 
 
 private:
+	//para mover el fondo del juego en y///
+	GLfloat mover_fondojuego_y;
+	///para mover el fondo del menu en x//
+	GLfloat mover_fondomenu_x;
+
 	void CargandoObjetos();
 	void IniciandoVideo();
 	void MoverEnemigo();

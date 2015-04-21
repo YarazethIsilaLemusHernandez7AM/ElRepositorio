@@ -60,7 +60,7 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\OpegGLImplement.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de código fuente</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
