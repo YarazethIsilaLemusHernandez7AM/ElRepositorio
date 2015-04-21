@@ -60,7 +60,6 @@ void Sprite::CreateTextures(char* name){
 		strcpy(pathImg, nameResource);
 		strcpy(pathDat, nameResource);
 		strcat(pathImg, ".bmp");
-		strcat(pathImg, ".gif");
 		strcat(pathDat, ".dat");
 
 		this->openGlImplement = openGlImplement;
