@@ -207,6 +207,10 @@ void CGame::MoverEnemigo(){
 }//Termina MoverEnemigo
 
 void CGame::JugandoPintar(){
+	mover_fondojuego_y -= 2;
+	jugandoFondo->TranslateXY(0.f, mover_fondojuego_y++);
+	if (mover_fondojuego_y < -1700)
+		mover_fondojuego_y = 0.f;
 	jugandoFondo->Draw();
 	////////////////////////////////////////
 	//////// CONTROL DE COLISIONES /////////
@@ -323,10 +327,7 @@ void CGame::MenuActualizar()
 
 void CGame::MenuPintar()
 {
-	//velociadad del movimiento tranlate_menu_x -= 4;
-	// aqui en fondo se mueve en x jundadofondo->transale(tranaslate_menu_x, 0.f)
-		//aqui es para que se regrese if (transalate_menu_x<-1280)
-	// y regresa a 0 si si es cierto en el if translate_menu_x=0.f;
+	
 	menuFondo->Draw();
 	textoTitulo->TranslateXYDraw(WIDTH_SCREEN / 8, 0);
 
