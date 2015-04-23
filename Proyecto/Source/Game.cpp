@@ -240,6 +240,7 @@ void CGame::JugandoPintar(){
 	}
 	if (vida <= CERO)
 		estadoJuego = ESTADO_TERMINANDO;
+	
 
 	nave->Draw();
 	for (int i = 0; i < nivel[nivelActual].Enemigos_VisiblesAlMismoTiempo; i++)

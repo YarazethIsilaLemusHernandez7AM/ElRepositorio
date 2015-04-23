@@ -53,7 +53,7 @@ public:
 	GLfloat ConvertCOORDInvf(GLfloat coord);
 	GLuint LoadTexture(SDL_Surface * surface, GLuint x, GLuint y, GLuint w, GLuint h);
 
-	GLuint shaderProgram;
+	GLuint shaderProgram;	
 	GLint vertexPositionAttribute;
 	GLint vertexTextureCoordAttribute;
 	GLint samplerUniform;
