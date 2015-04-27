@@ -207,9 +207,9 @@ void CGame::MoverEnemigo(){
 }//Termina MoverEnemigo
 
 void CGame::JugandoPintar(){
-	mover_fondojuego_y -= 2;
+	mover_fondojuego_y -= 5;
 	jugandoFondo->TranslateXY(0.f, mover_fondojuego_y++);
-	if (mover_fondojuego_y < -1700)
+	if (mover_fondojuego_y < -1745)
 		mover_fondojuego_y = 0.f;
 	jugandoFondo->Draw();
 	////////////////////////////////////////
@@ -337,7 +337,7 @@ void CGame::MenuPintar()
 	//aqui es para que se regrese if (transalate_menu_x<-1280)
 	// y regresa a 0 si si es cierto en el if translate_menu_x=0.f;
 	mover_fondomenu_x -= 4;
-	menuFondo->TranslateXY(mover_fondomenu_x, 0.f);
+	menuFondo->TranslateXY(mover_fondomenu_x++, 0.f);
 	if (mover_fondomenu_x < -1200)
 		mover_fondomenu_x = 0.f;
 	
