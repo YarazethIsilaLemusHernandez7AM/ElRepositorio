@@ -30,7 +30,6 @@ private:
 	GLfloat mover_fondojuego_y;
 	///para mover el fondo del menu en x//
 	GLfloat mover_fondomenu_x;
-
 	void CargandoObjetos();
 	void IniciandoVideo();
 	void MoverEnemigo();
@@ -82,5 +81,7 @@ private:
 	Sprite *jugandoFondo;//Fondo del juego
 	Sprite *ganasteFondo;//Fondo cuando ganas
 	Sprite *perdisteFondo;//Fondo cuando ganas
+	Sprite*objetocafe;//obejto del juego
+	Sprite*objetotres;//obejeto del juego
 
 };

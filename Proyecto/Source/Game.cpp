@@ -51,6 +51,8 @@ void CGame::CargandoObjetos()
 	menuFondo = new Sprite(&openGlImplement, "Menu", 0, 0);
 	textoTitulo = new Sprite(&openGlImplement, "Texto_Titulo", 0, 0);
 	textoNombre = new Sprite(&openGlImplement, "Texto_Nombre", 0, 0);
+	objetocafe = new Sprite(&openGlImplement,"cafe",0,0);
+	objetotres = new Sprite(&openGlImplement,"gris",0,0);
 	textoOpcion1 = new Sprite(&openGlImplement, "Texto_Opcion1", 0, 0);
 	textoOpcion2 = new Sprite(&openGlImplement, "Texto_Opcion2", 0, 0);
 	textoOpcion1Sel = new Sprite(&openGlImplement, "Texto_Opcion1Sel", 0, 0);
@@ -74,6 +76,8 @@ void CGame::Finalize(){
 	delete menuFondo;
 	delete textoTitulo;
 	delete textoNombre;
+	delete objetocafe;
+	delete objetotres;
 	delete textoOpcion1;
 	delete textoOpcion2;
 	delete textoOpcion1Sel;
@@ -212,6 +216,18 @@ void CGame::JugandoPintar(){
 	if (mover_fondojuego_y < -1745)
 		mover_fondojuego_y = 0.f;
 	jugandoFondo->Draw();
+	textoNombre->TranslateXY(500, 450);//570
+	textoNombre->Draw();
+	textoNombre->ScaleXYZ(30.f,30.f,30.f);
+	textoNombre->RotateXYZ(1.f,1.f,0);
+	objetocafe->Draw();
+	objetocafe->ScaleXYZ(30.f,30.f,30.f);
+	objetocafe->RotateXYZ(1.f,0,0);
+	objetocafe->TranslateXY(130.f, 90.f);
+	objetotres->Draw();
+	objetotres->ScaleXYZ(35.f, 35.f, 35.f);
+	objetotres->RotateXYZ(0,0,1.f);
+	objetotres->TranslateXY(200.f,400.f);
 	////////////////////////////////////////
 	//////// CONTROL DE COLISIONES /////////
 	for (int i = 0; i < nivel[nivelActual].Enemigos_VisiblesAlMismoTiempo; i++)
